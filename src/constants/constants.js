@@ -26,9 +26,8 @@ export const projects = [
   {
     title: 'Personal Portfolio',
     description: "The current website you are using is my portfolio project. The project was built using Next JS, a framework built on React.",
-    image: '/images/4.jpg',
+    image: '/images/4.PNG',
     tags: ['React', 'Next JS', 'Html', 'CSS'],
-    source: 'https://google.com',
     visit: 'https://google.com',
     id: 3,
   },
