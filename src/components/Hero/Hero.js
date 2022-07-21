@@ -4,6 +4,7 @@ import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponent
 import Button from '../../styles/GlobalComponents/Button'
 import { LeftSection } from './HeroStyles';
 import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 const Hero = (props) => {
   const [loopNum, setLoopNum] = useState(0);
@@ -45,13 +46,18 @@ const Hero = (props) => {
   return (
   <Section row nopadding>
     <LeftSection>
+    <TrackVisibility>
+        {({isVisible}) => 
+        <div className={isVisible ? 'animate__animated animate__fadeIn' : '' }>
         <SectionTitle main center>
         Mario Eid <br/> <span className="txt-rotate"> <span className="wrap">{text}</span></span>
         </SectionTitle> 
-        <SectionText>
-          A senior in Computer Science with a focus in full stack development. I'm always looking to learn and collaborate with fellow Software Engineers so feel free to look through my work!
-        </SectionText>
-        <Button onClick={() => window.location = '#about'}>Contact</Button>
+        </div>}
+      </TrackVisibility>
+          <SectionText>
+            A senior in Computer Science with a focus in full stack development. I'm always looking to learn and collaborate with fellow Software Engineers so feel free to look through my work!
+          </SectionText>
+          <Button onClick={() => window.location = '#about'}>Contact</Button>
     </LeftSection>
   </Section>
   )

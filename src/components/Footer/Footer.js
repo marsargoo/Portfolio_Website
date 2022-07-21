@@ -21,6 +21,17 @@ const Footer = () => {
         <CompanyContainer>
           <Slogan>Feel free to contact me !</Slogan>
         </CompanyContainer>
+        <SocialContainer>
+          <SocialIcons href='https://github.com/marsargoo' target='_blank'>
+            <AiFillGithub size='3rem' />
+          </SocialIcons>
+          <SocialIcons href='https://www.linkedin.com/in/mario-eid-a627aa194/' target='_blank'>
+            <AiFillLinkedin size='3rem' />
+          </SocialIcons>
+          <SocialIcons href='https://instagram.com' target='_blank'>
+            <AiFillInstagram size='3rem' />
+          </SocialIcons>
+        </SocialContainer>
       </SocialIconsContainer>
     </FooterWrapper>
   );
