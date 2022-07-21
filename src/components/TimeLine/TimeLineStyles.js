@@ -105,6 +105,10 @@ export const CarouselItemText = styled.p`
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.75);
   padding-right: 16px;
+  transition: .4s ease;
+  &:hover {
+    color: white;
+  }
 
   @media ${props => props.theme.breakpoints.md} {
     font-size: 12px;
