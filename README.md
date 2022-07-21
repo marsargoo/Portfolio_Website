@@ -19,3 +19,5 @@ Technologies/About/Footer:
 ![image](https://user-images.githubusercontent.com/43450418/180224370-12935daa-013c-4e34-a2cc-71d06e4b9c7d.png)
 
 ## How to run the project
+
+To have all the prerequisites necessary to run the project, please use the following [link](https://nextjs.org/docs) and complete the steps in order.
